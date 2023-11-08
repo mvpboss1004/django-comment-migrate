@@ -5,7 +5,7 @@ Django Comment Migrate
 
 这是一个Django model注释迁移的app
 
-`English <./README.rst>`__ \| 简体中文
+`English <./README.html>`__ \| 简体中文
 
 特性
 ----

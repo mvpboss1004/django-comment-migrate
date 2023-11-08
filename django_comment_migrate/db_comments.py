@@ -34,8 +34,12 @@ def migrate_app_models_comment_to_database(app_models, using):
         )
     else:
         for model in app_models:
-
             if not model._meta.managed:
+                warnings.warn(f'Skip unmanaged model: {model.__name__}')
+                continue
+
+            if model._meta.parents:
+                warnings.warn(f'Skip inheritated model: {model.__name__}')
                 continue
 
             executor = migration_class(connection=connections[using], model=model)

@@ -5,7 +5,7 @@ Django Comment Migrate
 
 An app that provides Django model comment migration
 
-English \| `简体中文 <./README-zh_CN.rst>`__
+English \| `简体中文 <./README-zh_CN.html>`__
 
 Feature
 -------
